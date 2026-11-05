@@ -3,17 +3,18 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const DB_PATH = process.env.DB_PATH || './books.db';
 
 // Middleware
 app.use(express.json());
 
 // Connect to SQLite database
-const db = new sqlite3.Database('./books.db', (err) => {
+const db = new sqlite3.Database(DB_PATH, (err) => {
     if (err) {
         console.error('Database connection failed:', err.message);
     } else {
-        console.log('Connected to SQLite database');
+        console.log(`Connected to SQLite database at ${DB_PATH}`);
     }
 });
 
@@ -362,8 +363,8 @@ app.use((err, req, res, next) => {
 // Start server after database initialization
 initializeDatabase()
     .then(() => {
-        app.listen(PORT, () => {
-            console.log(`Server running at http://localhost:${PORT}`);
+        app.listen(PORT, '0.0.0.0', () => {
+            console.log(`Server running at http://0.0.0.0:${PORT}`);
         });
     })
     .catch((err) => {
