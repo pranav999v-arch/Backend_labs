@@ -1,0 +1,105 @@
+
+@baseUrl = http://localhost:3000
+
+### 1. HOME API
+GET {{baseUrl}}/
+
+### 2. HEALTH CHECK
+GET {{baseUrl}}/health
+
+### 3. GET ALL BOOKS
+GET {{baseUrl}}/books
+
+### 4. SEARCH BOOKS BY TITLE
+GET {{baseUrl}}/books?search_q=Fire
+
+### 5. SORT BOOKS BY PRICE ASCENDING
+GET {{baseUrl}}/books?order_by=price&order=ASC
+
+### 6. SORT BOOKS BY PRICE DESCENDING
+GET {{baseUrl}}/books?order_by=price&order=DESC
+
+### 7. PAGINATION - LIMIT 2
+GET {{baseUrl}}/books?limit=2&offset=0
+
+### 8. PAGINATION - NEXT 2 BOOKS
+GET {{baseUrl}}/books?limit=2&offset=2
+
+### 9. FILTER BOOKS BY PRICE RANGE
+GET {{baseUrl}}/books?min_price=200&max_price=300
+
+### 10. COMBINE SEARCH AND SORTING
+GET {{baseUrl}}/books?search_q=Rich&order_by=price&order=DESC
+
+### 11. GET BOOK BY ID
+GET {{baseUrl}}/books/1
+
+### 12. GET NON-EXISTING BOOK
+GET {{baseUrl}}/books/999999
+
+### 13. ADD NEW BOOK
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "price": 400
+}
+
+### 14. POST VALIDATION - MISSING TITLE
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+    "author": "Test Author",
+    "price": 250
+}
+
+### 15. POST VALIDATION - INVALID PRICE
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+    "title": "Test Book",
+    "author": "Test Author",
+    "price": "invalid"
+}
+
+### 16. INVALID SORTING ORDER
+GET {{baseUrl}}/books?order=INVALID
+
+### 17. INVALID LIMIT
+GET {{baseUrl}}/books?limit=-5
+
+### 18. INVALID PRICE RANGE
+GET {{baseUrl}}/books?min_price=500&max_price=100
+
+### 19. UPDATE BOOK
+PUT {{baseUrl}}/books/6
+Content-Type: application/json
+
+{
+    "title": "The Power of Habit - Updated",
+    "author": "Charles Duhigg",
+    "price": 450
+}
+
+### 20. UPDATE NON-EXISTING BOOK
+PUT {{baseUrl}}/books/999999
+Content-Type: application/json
+
+{
+    "title": "Unknown Book",
+    "author": "Unknown Author",
+    "price": 300
+}
+
+### 21. DELETE BOOK
+DELETE {{baseUrl}}/books/6
+
+### 22. DELETE NON-EXISTING BOOK
+DELETE {{baseUrl}}/books/999999
+
+### 23. INVALID ROUTE
+GET {{baseUrl}}/students
