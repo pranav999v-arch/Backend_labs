@@ -63,7 +63,7 @@ lab-3/
 ├── README.md
 ├── .gitignore
 │
-└── screeshots/
+└── screenshots/
     ├── Screenshot 2026-11-05 at 3.18.52 PM.png
     ├── Screenshot 2026-11-05 at 3.20.02 PM.png
     ├── Screenshot 2026-11-05 at 3.20.12 PM.png
@@ -364,120 +364,124 @@ The following test cases are included:
 | Test No. | Test Case | Expected Result |
 |---|---|---|
 | 1 | Home API | 200 OK |
-| 2 | Get all books | 200 OK |
-| 3 | Search books | 200 OK |
-| 4 | Sort books ASC | 200 OK |
-| 5 | Sort books DESC | 200 OK |
-| 6 | Pagination | 200 OK |
-| 7 | Price range filter | 200 OK |
-| 8 | Get book by ID | 200 OK |
-| 9 | Get invalid book ID | 404 Not Found |
-| 10 | Add new book | 201 Created |
-| 11 | Missing title validation | 400 Bad Request |
-| 12 | Invalid price validation | 400 Bad Request |
-| 13 | Update book | 200 OK |
-| 14 | Update missing book | 404 Not Found |
-| 15 | Delete book | 200 OK |
-| 16 | Delete missing book | 404 Not Found |
-| 17 | Invalid sorting order | 400 Bad Request |
-| 18 | Invalid pagination | 400 Bad Request |
-| 19 | Invalid price range | 400 Bad Request |
-| 20 | Invalid route | 404 Not Found |
+| 2 | Health-check request (`/health`; route is not implemented) | 404 Not Found |
+| 3 | Get all books | 200 OK |
+| 4 | Search books by title | 200 OK |
+| 5 | Sort books by price ascending | 200 OK |
+| 6 | Sort books by price descending | 200 OK |
+| 7 | First page of books | 200 OK |
+| 8 | Next page of books | 200 OK |
+| 9 | Filter books by price range | 200 OK |
+| 10 | Combine search and sorting | 200 OK |
+| 11 | Get book by ID | 200 OK |
+| 12 | Get non-existing book | 404 Not Found |
+| 13 | Add new book | 201 Created |
+| 14 | Missing title validation | 400 Bad Request |
+| 15 | Invalid price validation | 400 Bad Request |
+| 16 | Invalid sorting order | 400 Bad Request |
+| 17 | Invalid limit | 400 Bad Request |
+| 18 | Invalid price range | 400 Bad Request |
+| 19 | Update existing book | 200 OK |
+| 20 | Update non-existing book | 404 Not Found |
+| 21 | Delete existing book | 200 OK |
+| 22 | Delete non-existing book | 404 Not Found |
+| 23 | Invalid route | 404 Not Found |
 
 ## 13. Screenshots of Working Output
 
-The following screenshots demonstrate the implementation and testing of the REST API. The project contains 23 captured screenshots covering all test cases from the API checklist.
+The following screenshots are listed in the same order as the 23 requests in `app.http`. Screenshot 2 records the `/health` request returning 404 because this app does not currently implement a health-check route.
 
 ### 1. Home API Response
 
-![Home API Response](./screeshots/Screenshot%202026-11-05%20at%203.18.52%E2%80%AFPM.png)
+![Home API Response](./screenshots/Screenshot%202026-11-05%20at%203.18.52%E2%80%AFPM.png)
 
-### 2. Retrieve All Books
+### 2. Health-Check Request (404)
 
-![Get All Books](./screeshots/Screenshot%202026-11-05%20at%203.20.12%E2%80%AFPM.png)
+![Health-check request returns 404 because the route is not implemented](./screenshots/Screenshot%202026-11-05%20at%203.20.02%E2%80%AFPM.png)
 
-### 3. Search Books
+### 3. Retrieve All Books
 
-![Search Books](./screeshots/Screenshot%202026-11-05%20at%203.20.21%E2%80%AFPM.png)
-### 4. Sorting Functionality
+![Get All Books](./screenshots/Screenshot%202026-11-05%20at%203.20.12%E2%80%AFPM.png)
 
-![Sorting Books](./screeshots/Screenshot%202026-11-05%20at%203.20.28%E2%80%AFPM.png)
+### 4. Search Books by Title
 
-### 5. Pagination Functionality
+![Search Books](./screenshots/Screenshot%202026-11-05%20at%203.20.21%E2%80%AFPM.png)
 
-![Pagination](./screeshots/Screenshot%202026-11-05%20at%203.20.28%E2%80%AFPM.png)
+### 5. Sort Books by Price Ascending
 
-### 6. Price Range Filtering
+![Sort books by price ascending](./screenshots/Screenshot%202026-11-05%20at%203.20.28%E2%80%AFPM.png)
 
-![Price Filter](./screeshots/Screenshot%202026-11-05%20at%203.20.33%E2%80%AFPM.png)
+### 6. Sort Books by Price Descending
 
-### 7. Add New Book - POST
+![Sort books by price descending](./screenshots/Screenshot%202026-11-05%20at%203.20.33%E2%80%AFPM.png)
 
-![POST Book](./screeshots/Screenshot%202026-11-05%20at%203.20.39%E2%80%AFPM.png)
+### 7. First Page of Books
 
-### 8. Input Validation Error
+![First page of books](./screenshots/Screenshot%202026-11-05%20at%203.20.39%E2%80%AFPM.png)
 
-![Validation Error](./screeshots/Screenshot%202026-11-05%20at%203.20.47%E2%80%AFPM.png)
+### 8. Next Page of Books
 
-### 9. Update Book - PUT
+![Next page of books](./screenshots/Screenshot%202026-11-05%20at%203.20.47%E2%80%AFPM.png)
 
-![Update Book](./screeshots/Screenshot%202026-11-05%20at%203.20.57%E2%80%AFPM.png)
+### 9. Filter Books by Price Range
 
-### 10. Delete Book - DELETE
+![Price range filter](./screenshots/Screenshot%202026-11-05%20at%203.20.57%E2%80%AFPM.png)
 
-![Delete Book](./screeshots/Screenshot%202026-11-05%20at%203.21.04%E2%80%AFPM.png)
+### 10. Combine Search and Sorting
 
-### 11. Error Handling
+![Combined search and sorting](./screenshots/Screenshot%202026-11-05%20at%203.21.04%E2%80%AFPM.png)
 
-![Error Handling](./screeshots/Screenshot%202026-11-05%20at%203.21.11%E2%80%AFPM.png)
+### 11. Get Book by ID
+
+![Get book by ID](./screenshots/Screenshot%202026-11-05%20at%203.21.11%E2%80%AFPM.png)
 
 ### 12. Get Non-Existing Book
 
-![Get Non-Existing Book](./screeshots/Screenshot%202026-11-05%20at%203.21.17%E2%80%AFPM.png)
+![Get non-existing book](./screenshots/Screenshot%202026-11-05%20at%203.21.17%E2%80%AFPM.png)
 
-### 13. POST Request Validation Response
+### 13. Add New Book
 
-![POST Validation Response](./screeshots/Screenshot%202026-11-05%20at%203.21.24%E2%80%AFPM.png)
+![Create book](./screenshots/Screenshot%202026-11-05%20at%203.21.24%E2%80%AFPM.png)
 
-### 14. Update Existing Book Response
+### 14. Missing Title Validation
 
-![Update Existing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.31%E2%80%AFPM.png)
+![Missing title validation](./screenshots/Screenshot%202026-11-05%20at%203.21.31%E2%80%AFPM.png)
 
-### 15. Delete Response for Existing Book
+### 15. Invalid Price Validation
 
-![Delete Existing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.46%E2%80%AFPM.png)
+![Invalid price validation](./screenshots/Screenshot%202026-11-05%20at%203.21.46%E2%80%AFPM.png)
 
-### 16. Delete Response for Missing Book
+### 16. Invalid Sorting Order
 
-![Delete Missing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.54%E2%80%AFPM.png)
+![Invalid sorting order](./screenshots/Screenshot%202026-11-05%20at%203.21.54%E2%80%AFPM.png)
 
-### 17. Invalid Sorting Order Response
+### 17. Invalid Limit
 
-![Invalid Sorting Order](./screeshots/Screenshot%202026-11-05%20at%203.22.01%E2%80%AFPM.png)
+![Invalid limit](./screenshots/Screenshot%202026-11-05%20at%203.22.01%E2%80%AFPM.png)
 
-### 18. Invalid Limit Response
+### 18. Invalid Price Range
 
-![Invalid Limit](./screeshots/Screenshot%202026-11-05%20at%203.22.07%E2%80%AFPM.png)
+![Invalid price range](./screenshots/Screenshot%202026-11-05%20at%203.22.07%E2%80%AFPM.png)
 
-### 19. Invalid Price Range Response
+### 19. Update Existing Book
 
-![Invalid Price Range](./screeshots/Screenshot%202026-11-05%20at%203.22.16%E2%80%AFPM.png)
+![Update existing book](./screenshots/Screenshot%202026-11-05%20at%203.22.16%E2%80%AFPM.png)
 
-### 20. Health Check Endpoint
+### 20. Update Non-Existing Book
 
-![Health Check Endpoint](./screeshots/Screenshot%202026-11-05%20at%203.22.26%E2%80%AFPM.png)
+![Update non-existing book](./screenshots/Screenshot%202026-11-05%20at%203.22.26%E2%80%AFPM.png)
 
-### 21. Search and Filter Result
+### 21. Delete Existing Book
 
-![Search and Filter Result](./screeshots/Screenshot%202026-11-05%20at%203.22.33%E2%80%AFPM.png)
+![Delete existing book](./screenshots/Screenshot%202026-11-05%20at%203.22.33%E2%80%AFPM.png)
 
-### 22. Combined Search and Sorting Response
+### 22. Delete Non-Existing Book
 
-![Combined Search and Sorting](./screeshots/Screenshot%202026-11-05%20at%203.22.39%E2%80%AFPM.png)
+![Delete non-existing book](./screenshots/Screenshot%202026-11-05%20at%203.22.39%E2%80%AFPM.png)
 
-### 23. Final API Validation Output
+### 23. Invalid Route
 
-![Final API Validation Output](./screeshots/Screenshot%202026-11-05%20at%203.22.46%E2%80%AFPM.png)
+![Invalid route](./screenshots/Screenshot%202026-11-05%20at%203.22.46%E2%80%AFPM.png)
 
 ## 14. Debugging Exercises
 
