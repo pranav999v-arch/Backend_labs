@@ -10,7 +10,7 @@
 | Course | Backend Development Fundamentals |
 | Lab Number | 03 |
 | Module | RESTful API Development and Validation |
-| Faculty | Joel Prashanth D |
+| Faculty | Mr . Joel Prashanth D |
 
 ---
 
@@ -63,18 +63,30 @@ lab-3/
 ├── README.md
 ├── .gitignore
 │
-└── screenshots/
-    ├── home-api.png
-    ├── get-books.png
-    ├── search-books.png
-    ├── sorting.png
-    ├── pagination.png
-    ├── price-filter.png
-    ├── post-book.png
-    ├── validation-error.png
-    ├── put-book.png
-    ├── delete-book.png
-    └── error-handling.png
+└── screeshots/
+    ├── Screenshot 2026-11-05 at 3.18.52 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.02 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.12 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.21 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.28 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.33 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.39 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.47 PM.png
+    ├── Screenshot 2026-11-05 at 3.20.57 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.04 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.11 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.17 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.24 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.31 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.46 PM.png
+    ├── Screenshot 2026-11-05 at 3.21.54 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.01 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.07 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.16 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.26 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.33 PM.png
+    ├── Screenshot 2026-11-05 at 3.22.39 PM.png
+    └── Screenshot 2026-11-05 at 3.22.46 PM.png
 ```
 
 ## 5. Installation and Setup
@@ -374,51 +386,99 @@ The following test cases are included:
 
 ## 13. Screenshots of Working Output
 
-The following screenshots demonstrate the implementation and testing of the REST API.
+The following screenshots demonstrate the implementation and testing of the REST API. The project contains 23 captured screenshots covering all test cases from the API checklist.
 
 ### 1. Home API Response
 
-![Home API Response](screenshots/home-api.png)
+![Home API Response](./screeshots/Screenshot%202026-11-05%20at%203.18.52%E2%80%AFPM.png)
 
 ### 2. Retrieve All Books
 
-![Get All Books](screenshots/get-books.png)
+![Get All Books](./screeshots/Screenshot%202026-11-05%20at%203.20.02%E2%80%AFPM.png)
 
 ### 3. Search Books
 
-![Search Books](screenshots/search-books.png)
+![Search Books](./screeshots/Screenshot%202026-11-05%20at%203.20.12%E2%80%AFPM.png)
 
 ### 4. Sorting Functionality
 
-![Sorting Books](screenshots/sorting.png)
+![Sorting Books](./screeshots/Screenshot%202026-11-05%20at%203.20.21%E2%80%AFPM.png)
 
 ### 5. Pagination Functionality
 
-![Pagination](screenshots/pagination.png)
+![Pagination](./screeshots/Screenshot%202026-11-05%20at%203.20.28%E2%80%AFPM.png)
 
 ### 6. Price Range Filtering
 
-![Price Filter](screenshots/price-filter.png)
+![Price Filter](./screeshots/Screenshot%202026-11-05%20at%203.20.33%E2%80%AFPM.png)
 
 ### 7. Add New Book - POST
 
-![POST Book](screenshots/post-book.png)
+![POST Book](./screeshots/Screenshot%202026-11-05%20at%203.20.39%E2%80%AFPM.png)
 
 ### 8. Input Validation Error
 
-![Validation Error](screenshots/validation-error.png)
+![Validation Error](./screeshots/Screenshot%202026-11-05%20at%203.20.47%E2%80%AFPM.png)
 
 ### 9. Update Book - PUT
 
-![Update Book](screenshots/put-book.png)
+![Update Book](./screeshots/Screenshot%202026-11-05%20at%203.20.57%E2%80%AFPM.png)
 
 ### 10. Delete Book - DELETE
 
-![Delete Book](screenshots/delete-book.png)
+![Delete Book](./screeshots/Screenshot%202026-11-05%20at%203.21.04%E2%80%AFPM.png)
 
 ### 11. Error Handling
 
-![Error Handling](screenshots/error-handling.png)
+![Error Handling](./screeshots/Screenshot%202026-11-05%20at%203.21.11%E2%80%AFPM.png)
+
+### 12. Get Non-Existing Book
+
+![Get Non-Existing Book](./screeshots/Screenshot%202026-11-05%20at%203.21.17%E2%80%AFPM.png)
+
+### 13. POST Request Validation Response
+
+![POST Validation Response](./screeshots/Screenshot%202026-11-05%20at%203.21.24%E2%80%AFPM.png)
+
+### 14. Update Existing Book Response
+
+![Update Existing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.31%E2%80%AFPM.png)
+
+### 15. Delete Response for Existing Book
+
+![Delete Existing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.46%E2%80%AFPM.png)
+
+### 16. Delete Response for Missing Book
+
+![Delete Missing Book Response](./screeshots/Screenshot%202026-11-05%20at%203.21.54%E2%80%AFPM.png)
+
+### 17. Invalid Sorting Order Response
+
+![Invalid Sorting Order](./screeshots/Screenshot%202026-11-05%20at%203.22.01%E2%80%AFPM.png)
+
+### 18. Invalid Limit Response
+
+![Invalid Limit](./screeshots/Screenshot%202026-11-05%20at%203.22.07%E2%80%AFPM.png)
+
+### 19. Invalid Price Range Response
+
+![Invalid Price Range](./screeshots/Screenshot%202026-11-05%20at%203.22.16%E2%80%AFPM.png)
+
+### 20. Health Check Endpoint
+
+![Health Check Endpoint](./screeshots/Screenshot%202026-11-05%20at%203.22.26%E2%80%AFPM.png)
+
+### 21. Search and Filter Result
+
+![Search and Filter Result](./screeshots/Screenshot%202026-11-05%20at%203.22.33%E2%80%AFPM.png)
+
+### 22. Combined Search and Sorting Response
+
+![Combined Search and Sorting](./screeshots/Screenshot%202026-11-05%20at%203.22.39%E2%80%AFPM.png)
+
+### 23. Final API Validation Output
+
+![Final API Validation Output](./screeshots/Screenshot%202026-11-05%20at%203.22.46%E2%80%AFPM.png)
 
 ## 14. Debugging Exercises
 
