@@ -398,8 +398,7 @@ The following screenshots demonstrate the implementation and testing of the REST
 
 ### 3. Search Books
 
-![Search Books](./screeshots/Screenshot%202026-11-05%20at%203.20.12%E2%80%AFPM.png)
-
+![Search Books](./screeshots/Screenshot%202026-11-05%20at%203.20.21%E2%80%AFPM.png)
 ### 4. Sorting Functionality
 
 ![Sorting Books](./screeshots/Screenshot%202026-11-05%20at%203.20.21%E2%80%AFPM.png)
