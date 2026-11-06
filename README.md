@@ -394,7 +394,7 @@ The following screenshots demonstrate the implementation and testing of the REST
 
 ### 2. Retrieve All Books
 
-![Get All Books](./screeshots/Screenshot%202026-11-05%20at%203.20.02%E2%80%AFPM.png)
+![Get All Books](./screeshots/Screenshot%202026-11-05%20at%203.20.12%E2%80%AFPM.png)
 
 ### 3. Search Books
 
